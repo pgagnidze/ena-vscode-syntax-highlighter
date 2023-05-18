@@ -136,7 +136,7 @@
           ]
         }
       ]
-    },    
+    },
     "variables": {
       "name": "variable.other.ena",
       "match": "\\b[a-zA-Zა-ჰ_][a-zA-Z0-9ა-ჰ_]*\\b"
@@ -157,7 +157,7 @@
     "punctuation": {
       "match": "[,;]",
       "name": "punctuation.separator.ena"
-    }    
+    }
   },
   "scopeName": "source.ena"
 }
