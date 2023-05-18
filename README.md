@@ -11,12 +11,18 @@ Highlight all the main programming language features:
 - Comments
 - Strings
 - Numbers
+- Booleans
+- Nil values
 - Operators
 - Keywords (Georgian and English)
 
 ## Release Notes
 
 Users appreciate release notes as you update your extension.
+
+### 0.0.3
+
+Added nil values
 
 ### 0.0.2
 

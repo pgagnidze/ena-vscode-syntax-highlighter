@@ -18,6 +18,9 @@
       "include": "#booleans"
     },
     {
+      "include": "#nil"
+    },
+    {
       "include": "#functions"
     },
     {
@@ -100,6 +103,10 @@
     "booleans": {
       "name": "constant.language.boolean.ena",
       "match": "\\b(true|false|ჭეშმარიტი|მცდარი)\\b"
+    },
+    "nil": {
+      "name": "constant.language.nil.ena",
+      "match": "\\b(nil|ცარიელი)\\b"
     },
     "functions": {
       "patterns": [

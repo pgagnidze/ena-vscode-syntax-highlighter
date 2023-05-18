@@ -2,7 +2,7 @@
   "name": "ena",
   "displayName": "Ena",
   "description": " Syntax highlighter for the first Georgian programming language",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "pgagnidze",
   "repository": {
     "type": "git",
