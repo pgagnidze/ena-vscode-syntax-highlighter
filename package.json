@@ -1,0 +1,30 @@
+{
+  "name": "ena",
+  "displayName": "Ena",
+  "description": " Syntax highlighter for the first Georgian programming language",
+  "version": "0.0.1",
+  "publisher": "pgagnidze",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgagnidze/ena-vscode-syntax-highlighter.git"
+  },
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ena",
+      "aliases": ["Ena", "ena"],
+      "extensions": [".ena"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ena",
+      "scopeName": "source.ena",
+      "path": "./syntaxes/ena.tmLanguage.json"
+    }]
+  }
+}

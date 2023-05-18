@@ -1,0 +1,163 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Ena",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#operators"
+    },
+    {
+      "include": "#booleans"
+    },
+    {
+      "include": "#functions"
+    },
+    {
+      "include": "#variables"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#punctuation"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.ena",
+          "match": "\\b(if|elseif|else|while|new|function|local|return|თუ|თუარადა|თუარა|სანამ|ახალი|ფუნქცია|ლოკალური|დააბრუნე|მაჩვენე)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.ena",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.ena",
+              "match": "\\\\."
+            }
+          ]
+        },
+        {
+          "name": "string.quoted.single.ena",
+          "begin": "'",
+          "end": "'",
+          "patterns": [
+            {
+              "name": "constant.character.escape.ena",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    },
+    "numbers": {
+      "name": "constant.numeric.ena",
+      "match": "\\b\\d+\\b"
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.arithmetic.ena",
+          "match": "\\+|-|\\*|/|%|\\^"
+        },
+        {
+          "name": "keyword.operator.assignment.ena",
+          "match": "="
+        },
+        {
+          "name": "keyword.operator.print.ena",
+          "match": "@"
+        },
+        {
+          "name": "keyword.operator.comparison.ena",
+          "match": "<|>|<=|>=|==|!="
+        },
+        {
+          "name": "keyword.operator.logical.ena",
+          "match": "&|\\|"
+        },
+        {
+          "name": "keyword.operator.unary.ena",
+          "match": "!|\\+|-"
+        }
+      ]
+    },
+    "booleans": {
+      "name": "constant.language.boolean.ena",
+      "match": "\\b(true|false|ჭეშმარიტი|მცდარი)\\b"
+    },
+    "functions": {
+      "patterns": [
+        {
+          "name": "meta.function-declaration.ena",
+          "match": "(?<=\\b(ფუნქცია|function)\\s+)([a-zA-Zა-ჰ_][a-zA-Z0-9ა-ჰ_]*)\\s*\\(([^)]*)\\)",
+          "captures": {
+            "2": {
+              "name": "entity.name.function.ena"
+            },
+            "3": {
+              "name": "meta.parameters.ena variable.parameter.ena"
+            }
+          }
+        },
+        {
+          "name": "meta.function-call.ena",
+          "match": "(?<=\\b)([a-zA-Zა-ჰ_][a-zA-Z0-9ა-ჰ_]*)\\s*\\(([^)]*)\\)",
+          "captures": {
+            "1": {
+              "name": "entity.name.function.ena"
+            },
+            "2": {
+              "name": "meta.arguments.ena"
+            }
+          },
+          "patterns": [
+            {
+              "include": "#strings"
+            },
+            {
+              "include": "#numbers"
+            }
+          ]
+        }
+      ]
+    },    
+    "variables": {
+      "name": "variable.other.ena",
+      "match": "\\b[a-zA-Zა-ჰ_][a-zA-Z0-9ა-ჰ_]*\\b"
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.block.ena",
+          "begin": "#\\{",
+          "end": "#\\}"
+        },
+        {
+          "name": "comment.line.ena",
+          "match": "#.*$"
+        }
+      ]
+    },
+    "punctuation": {
+      "match": "[,;]",
+      "name": "punctuation.separator.ena"
+    }    
+  },
+  "scopeName": "source.ena"
+}
