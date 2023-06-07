@@ -4,6 +4,11 @@ All notable changes to the "ena" extension will be documented in this file.
 
 ## [0.0.3]
 
+- Added commands
+- Added long forms
+
+## [0.0.3]
+
 - Added nil values
 
 ## [0.0.2]

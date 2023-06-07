@@ -20,6 +20,12 @@ Highlight all the main programming language features:
 
 Users appreciate release notes as you update your extension.
 
+### 0.0.4
+
+Added commands
+
+Added long forms
+
 ### 0.0.3
 
 Added nil values

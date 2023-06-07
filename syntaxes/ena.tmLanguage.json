@@ -38,7 +38,7 @@
       "patterns": [
         {
           "name": "keyword.control.ena",
-          "match": "\\b(if|elseif|else|while|new|function|local|return|თუ|თუარადა|თუარა|სანამ|ახალი|ფუნქცია|ლოკალური|დააბრუნე|მაჩვენე)\\b"
+          "match": "\\b(if|elseif|else|while|new|function|local|return|თუ პირობა სრულდება|თუ|სხვა შემთხვევაში შეამოწმე თუ|თუარადა|სხვა შემთხვევაში|თუარა|სანამ პირობა სრულდება გაიმეორე|სანამ|ახალი|ფუნქცია სახელად|ფუნქცია|ლოკალური ცვლადი|ლოკალური|დააბრუნე მნიშვნელობა|დააბრუნე|მაჩვენე მნიშვნელობა ეკრანზე|მაჩვენე|გაუშვი ბრძანება|ბრძანება)\\b"
         }
       ]
     },
@@ -102,17 +102,17 @@
     },
     "booleans": {
       "name": "constant.language.boolean.ena",
-      "match": "\\b(true|false|ჭეშმარიტი|მცდარი)\\b"
+      "match": "\\b(true|false|ჭეშმარიტი მნიშვნელობა|ჭეშმარიტი|მცდარი მნიშვნელობა|მცდარი)\\b"
     },
     "nil": {
       "name": "constant.language.nil.ena",
-      "match": "\\b(nil|ცარიელი)\\b"
+      "match": "\\b(nil|ცარიელი მნიშვნელობა|ცარიელი)\\b"
     },
     "functions": {
       "patterns": [
         {
           "name": "meta.function-declaration.ena",
-          "match": "(?<=\\b(ფუნქცია|function)\\s+)([a-zA-Zა-ჰ_][a-zA-Z0-9ა-ჰ_]*)\\s*\\(([^)]*)\\)",
+          "match": "(?<=\\b(ფუნქცია სახელად|ფუნქცია|function)\\s+)([a-zA-Zა-ჰ_][a-zA-Z0-9ა-ჰ_]*)\\s*\\(([^)]*)\\)",
           "captures": {
             "2": {
               "name": "entity.name.function.ena"
