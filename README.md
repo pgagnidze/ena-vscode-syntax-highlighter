@@ -5,6 +5,7 @@ This is the VS code syntax highlighter extension for the Ena language.
 ## Features
 
 Highlight all the main programming language features:
+
 - Function names
 - Function parameters
 - Variables
